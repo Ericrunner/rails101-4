@@ -15,8 +15,8 @@
            <th><%= post.content%></th>
            <th><%= post.group.title %></th>
            <th><%= post.updated_at %></th>
-           <th><%= link_to("Edit",edit_group_post_path(post.group,post), class: "btn btn-default btn-xs") %></th>
-           <th><%= link_to("Delete",group_post_path(post.group,post), method: :delete, data: { confirm: "Are you sure?" },class: "btn btn-default btn-xs")%></th>
+           <th><%= link_to("Edit",edit_account_post_path(post), class: "btn btn-default btn-xs") %></th>
+           <th><%= link_to("Delete",account_post_path(post), method: :delete, data: { confirm: "Are you sure?" },class: "btn btn-default btn-xs")%></th>
          </tr>
       <% end %>
     </tbody>
